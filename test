@@ -7,12 +7,12 @@
       "text": "ทดสอบสร้างปุ่มม",
       "actions": [
         {
-          "type": "messeage",
+          "type": "message",
           "text": "กด 1",
           "lable": "ปุ่ม 1"
         },
         {
-          "type": "messeage",
+          "type": "message",
           "text": "กด 2",
           "lable": "ปุ่ม 2"
         }
