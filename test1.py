@@ -43,6 +43,8 @@ while i >= 0:
                 'จากระยะเวลา 1 เดือนที่ผ่านมา',
                 'ใน 1 เดือนที่ผ่านมานี้',
                 'พฤติกรรมใน 1 เดือนที่ผ่านมา','','','','','','','','','']
+  qq2 = ['ใน 2 สัปดาห์ที่ผ่านมารวมวันนี้ “ท่านรู้สึก หดหู่ เศร้า หรือท้อแท้สิ้นหวังหรือไม่”',
+         'ใน 2 สัปดาห์ที่ผ่านมารวมวันนี้ “ท่านรู้สึก เบื่อ ทำอะไรก็ไม่เพลิดเพลินหรือไม่”']
   
   #### 0,1,2,3
   
@@ -55,12 +57,21 @@ while i >= 0:
   answer3 = 'เป็นทุกวัน'
   listanswer = []
   question = ''
+  sc = 0
   face = ''
   qe = ''
   faceqe = ''
   appe = []
   score = 0
   number = ['0','1','2','3']
+  qqq2 =[]
+  q2q = ''
+  scc = 0
+  
+  
+  
+  
+  
   if text in sayhi :
     print('--' + random.choice(answer))
   
@@ -81,17 +92,94 @@ while i >= 0:
             if i == 9:
                 print(score)
                 i=0
-                for j in e:
-                    if qe != appe:
-                        qe = random.choice(e)
-                        facepe = random.choice(wordappende)
-                        appe.append(qe)
-                        print(wordappende+qe)
-                        break
-        
- 
+                #break
+                for h in qq2:
+                    if q2q != qqq2:
+                        q2q = random.choice(qq2)
+                        qqq2.append(qq2)
+                        print(q2q)
+                        print('พิมพ์ "มี" หน่อยนะถ้ามีอาการ พิมพ์ "ไม่มี" ถ้าไม่มีอาการน้าาา')
+                        aq2 = input()
+                        if aq2 =='มี':
+                            sc+=1
+                            i+=1
+                        elif aq2 == 'ไม่มี':
+                            sc+=0
+                            i+=1
+                        if i==2:
+                            print(sc)
+                            #break
+                            
+                            print(random.choice(wordappende)+'มีความคิดอยากตาย หรือคิดว่าตายไปจะดีกว่า')
+                            print('กรุณาตอบ "ไม่มี" ถ้าไม่มีอาการ หรือตอบ "มี" ถ้าไม่มีอาการ')
+                            input1 = input()
+                            if input1 == 'ไม่':
+                                    scc = 0 + scc
+                            else:
+                                    scc = 1 + scc
+                            print(random.choice(wordappende)+'อยากทำร้ายตัวเอง หรือทำให้ตัวเองบาดเจ็บ')
+                            print('กรุณาตอบ "ไม่มี" ถ้าไม่มีอาการ หรือตอบ "มี" ถ้าไม่มีอาการ')
+                            input2 = input()
+                            if input2=='ไม่':
+                                    scc = 0+scc
+                            else:
+                                    scc = 2+scc
+                                    
+                            print(random.choice(wordappende)+'มีความคิดเกี่ยวกับการฆ่าตัวตาย')
+                            print('กรุณาตอบ "ไม่มี" ถ้าไม่มีอาการ หรือตอบ "มี" ถ้าไม่มีอาการ')
+                            input3 = input()
+                            if input3=='ไม่':
+                                    scc = 0+scc
+                            else:
+                                    scc = 6+scc
+                            print(random.choice(wordappende)+'ท่านสามารถควบคุมความอยากฆ่าตัวตายที่ท่านคิดอยู่นั้นได้หรือไม่ หรือบอกได้ไหมว่าคงจะไม่ทำตามความคิดนั้นในขณะนี้')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input31 = input()
+                            if input31 == 'ได้':
+                                scc = scc + 0
+                            else:
+                                scc = scc + 8
+                            print(random.choice(wordappende)+'มีแผนการที่จะฆ่าตัวตาย')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input4 = input()
+                            if input4 == 'ได้':
+                                        scc = scc + 0
+                            else:
+                                        scc = scc + 8
+                            print(random.choice(wordappende)+'ได้เตรียมการที่จะทำร้ายตนเอง หรือเตรียมการจะฆ่าตัวตาย โดยตั้งใจว่าจะให้ตายจริงๆ')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input5 = input()
+                            if input5 == 'ได้':
+                                        scc = scc + 0
+                            else:
+                                        scc = scc + 9
+                            print(random.choice(wordappende)+'ได้ทำให้ตนเองบาดเจ็บ แต่ไม่ตั้งใจที่จะทำให้เสียชีวิต')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input6 = input()
+                            if input6 == 'ได้':
+                                        scc = scc + 0
+                            else:
+                                        scc = scc + 4
+                            print(random.choice(wordappende)+'ได้พยายามฆ่าตัวตาย โดยคาดหวัง/ตั้งใจที่จะให้ตาย')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input7 = input()
+                            if input7 == 'ได้':
+                                        scc = scc + 0
+                            else:
+                                        scc = scc + 10
+                            print('ตลอดชีวิตที่ผ่านมา... ท่านเคยพยายามฆ่าตัวตาย')
+                            print('กรุณาตอบ "ได้" หากสามารถควบคุมอารมณ์ตัวเองได้ ตอบ "ไม่ไ้ด้" หากท่านไม่สามารถควบคุมอารมณ์ตนเองได้')
+                            input8 = input()
+                            if input8 == 'ได้':
+                                        scc = scc + 0
+                            else:
+                                        scc = scc + 4
+                                #scc = input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8
+                            print(scc)
+                                #print(sc)
+                            break
     
-       
+
               
        
   
@@ -100,3 +188,21 @@ while i >= 0:
   else:
     print("-- เอ๊ะ! พิมพ์ผิดหรือเปล่าน้าาาา กอดอุ่นไม่เห็นเข้าใจเลย :/" )
     
+    
+    
+   
+    
+    
+    
+    
+
+   
+    
+        
+        
+        
+        
+        
+        
+        
+        
